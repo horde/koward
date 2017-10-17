@@ -11,7 +11,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2016-01-13</date>
+ <date>2017-10-17</date>
  <version>
   <release>0.99.1</release>
   <api>1.0</api>
@@ -28,8 +28,7 @@
  <contents>
   <dir name="/">
    <dir name="doc">
-    <file name="COPYING" role="horde" />
-    <file name="TODO" role="horde" />
+    <file name="TODO.rst" role="doc" />
    </dir> <!-- /doc -->
    <dir name="lib">
     <file name=".htaccess" role="horde" />
@@ -128,7 +127,7 @@
       <file name="visible.php.dist" role="www" />
      </dir> <!-- /www/koward/config -->
      <dir name="doc">
-      <file name="INSTALL" role="www" />
+      <file name="INSTALL.rst" role="horde" />
      </dir> <!-- /www/koward/doc -->
     </dir> <!-- /www/koward -->
     <dir name="htdocs">
@@ -205,6 +204,7 @@
      </dir> <!-- /www/htdocs/koward -->
     </dir> <!-- /www/htdocs -->
    </dir> <!-- /www -->
+   <file name="LICENSE" role="doc" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -279,8 +279,7 @@
  </dependencies>
  <phprelease>
   <filelist>
-   <install as="koward/doc/COPYING" name="doc/COPYING" />
-   <install as="koward/doc/TODO" name="doc/TODO" />
+   <install as="TODO.rst" name="doc/TODO.rst" />
    <install as="koward/lib/.htaccess" name="lib/.htaccess" />
    <install name="lib/Koward.php" as="Koward.php" />
    <install name="lib/Koward/Cli.php" as="Koward/Cli.php" />
@@ -312,6 +311,7 @@
    <install name="lib/Koward/View/Object/view.html.php" as="Koward/View/Object/view.html.php" />
    <install name="lib/Koward/View/shared/_header.html.php" as="Koward/View/shared/_header.html.php" />
    <install name="lib/Koward/View/shared/_menu.html.php" as="Koward/View/shared/_menu.html.php" />
+   <install as="LICENSE" name="LICENSE" />
    <install name="script/Koward/koward.php" as="koward" />
    <install name="test/Koward/AllTests.php" as="Koward/AllTests.php" />
    <install as="Koward/Autoload.php" name="test/Koward/Autoload.php" />
@@ -380,7 +380,7 @@
    <install name="www/koward/config/routes.php.dist" as="koward/config/routes.php.dist" />
    <install name="www/koward/config/search.php.dist" as="koward/config/search.php.dist" />
    <install name="www/koward/config/visible.php.dist" as="koward/config/visible.php.dist" />
-   <install name="www/koward/doc/INSTALL" as="koward/doc/INSTALL" />
+   <install as="koward/www/koward/doc/INSTALL.rst" name="www/koward/doc/INSTALL.rst" />
   </filelist>
  </phprelease>
 </package>

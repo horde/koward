@@ -11,7 +11,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-20</date>
  <version>
   <release>0.99.1</release>
   <api>1.0</api>
@@ -98,7 +98,6 @@
      <file name="Autoload.php" role="test" />
      <file name="bootstrap.php" role="test" />
      <file name="KowardTest.php" role="test" />
-     <file name="phpunit.xml" role="test" />
     </dir> <!-- /test/Koward -->
    </dir> <!-- /test -->
    <dir name="www">
@@ -205,6 +204,7 @@
     </dir> <!-- /www/htdocs -->
    </dir> <!-- /www -->
    <file name="LICENSE" role="doc" />
+   <file name="phpunit.xml.dist" role="horde" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -312,12 +312,12 @@
    <install name="lib/Koward/View/shared/_header.html.php" as="Koward/View/shared/_header.html.php" />
    <install name="lib/Koward/View/shared/_menu.html.php" as="Koward/View/shared/_menu.html.php" />
    <install as="LICENSE" name="LICENSE" />
+   <install as="koward/phpunit.xml.dist" name="phpunit.xml.dist" />
    <install name="script/Koward/koward.php" as="koward" />
    <install name="test/Koward/AllTests.php" as="Koward/AllTests.php" />
    <install as="Koward/Autoload.php" name="test/Koward/Autoload.php" />
    <install as="Koward/bootstrap.php" name="test/Koward/bootstrap.php" />
    <install name="test/Koward/KowardTest.php" as="Koward/KowardTest.php" />
-   <install as="Koward/phpunit.xml" name="test/Koward/phpunit.xml" />
    <install name="www/horde/config/conf.php.dist" as="horde/config/conf.php.dist" />
    <install name="www/horde/config/nls.php.dist" as="horde/config/nls.php.dist" />
    <install name="www/horde/config/prefs.php.dist" as="horde/config/prefs.php.dist" />

@@ -11,7 +11,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-20</date>
+ <date>2017-10-25</date>
  <version>
   <release>0.99.1</release>
   <api>1.0</api>
@@ -204,7 +204,6 @@
     </dir> <!-- /www/htdocs -->
    </dir> <!-- /www -->
    <file name="LICENSE" role="doc" />
-   <file name="phpunit.xml.dist" role="horde" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -312,7 +311,6 @@
    <install name="lib/Koward/View/shared/_header.html.php" as="Koward/View/shared/_header.html.php" />
    <install name="lib/Koward/View/shared/_menu.html.php" as="Koward/View/shared/_menu.html.php" />
    <install as="LICENSE" name="LICENSE" />
-   <install as="koward/phpunit.xml.dist" name="phpunit.xml.dist" />
    <install name="script/Koward/koward.php" as="koward" />
    <install name="test/Koward/AllTests.php" as="Koward/AllTests.php" />
    <install as="Koward/Autoload.php" name="test/Koward/Autoload.php" />

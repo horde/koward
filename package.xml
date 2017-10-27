@@ -11,7 +11,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-25</date>
+ <date>2017-10-27</date>
  <version>
   <release>0.99.1</release>
   <api>1.0</api>
@@ -28,6 +28,7 @@
  <contents>
   <dir name="/">
    <dir name="doc">
+    <file name="CHANGES" role="doc" />
     <file name="TODO.rst" role="doc" />
    </dir> <!-- /doc -->
    <dir name="lib">
@@ -278,6 +279,7 @@
  </dependencies>
  <phprelease>
   <filelist>
+   <install as="CHANGES" name="doc/CHANGES" />
    <install as="TODO.rst" name="doc/TODO.rst" />
    <install as="koward/lib/.htaccess" name="lib/.htaccess" />
    <install name="lib/Koward.php" as="Koward.php" />

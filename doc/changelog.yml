@@ -1,1 +1,12 @@
 ---
+0.99.1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2011-03-07
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes:
+    [jan] Officially support PHP 7.

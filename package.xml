@@ -2,19 +2,20 @@
 <package packagerversion="1.4.9" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>koward</name>
  <channel>pear.horde.org</channel>
- <summary>An administration frontend for the Kolab server</summary>
+ <summary>Kolab server administration application</summary>
  <description>This package provides a web based frontend for the
- administration of the Kolab server.</description>
+administration of the Kolab server.
+</description>
  <lead>
   <name>Gunnar Wrobel</name>
   <user>wrobel</user>
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-27</date>
+ <date>2017-11-11</date>
  <version>
   <release>0.99.1</release>
-  <api>1.0</api>
+  <api>1.0.0</api>
  </version>
  <stability>
   <release>beta</release>
@@ -383,4 +384,21 @@
    <install as="koward/www/koward/doc/INSTALL.rst" name="www/koward/doc/INSTALL.rst" />
   </filelist>
  </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>0.99.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Officially support PHP 7.
+* First release candidate for Horde 4.
+   </notes>
+  </release>
+ </changelog>
 </package>

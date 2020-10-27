@@ -1,7 +1,7 @@
 {
     "name": "horde/koward",
     "description": "Kolab server administration application",
-    "type": "project",
+    "type": "horde-application",
     "homepage": "https://www.horde.org",
     "license": "LGPL-2.1",
     "authors": [
@@ -12,35 +12,36 @@
         }
     ],
     "version": "0.99.1",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
+        },
+        {
+            "url": "https://pear.phpunit.de",
+            "type": "pear"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Autoloader": "*",
-        "pear-pear.horde.org/Horde_Auth": "*",
-        "pear-pear.horde.org/Horde_Browser": "*",
-        "pear-pear.horde.org/Horde_Controller": "*",
-        "pear-pear.horde.org/Horde_Form": "*",
-        "pear-pear.horde.org/Horde_Nls": "*",
-        "pear-pear.horde.org/Horde_Notification": "*",
-        "pear-pear.horde.org/Horde_Ui": "*",
-        "pear-pear.horde.org/Horde_Kolab_Server": "*",
-        "pear-pear.horde.org/Horde_Kolab_Session": "*",
-        "pear-pear.horde.org/Horde_Perms": "*",
-        "pear-pear.horde.org/Horde_Routes": "*",
-        "pear-pear.horde.org/Horde_View": "*"
+        "horde/autoloader": "dev-master",
+        "horde/auth": "dev-master",
+        "horde/browser": "dev-master",
+        "horde/controller": "dev-master",
+        "horde/form": "dev-master",
+        "horde/nls": "dev-master",
+        "horde/notification": "dev-master",
+        "horde/ui": "dev-master",
+        "horde/kolab_server": "dev-master",
+        "horde/kolab_session": "dev-master",
+        "horde/perms": "dev-master",
+        "horde/routes": "dev-master",
+        "horde/view": "dev-master"
     },
     "suggest": {
         "pear-pear.phpunit.de/PHPUnit": "*"
-    },
-    "replace": {
-        "pear-pear.horde.org/koward": "0.*",
-        "pear-horde/koward": "0.*"
     },
     "autoload": {
         "psr-0": {

@@ -78,7 +78,7 @@ class Koward_Form_Search extends Horde_Form {
 
     function &execute($attributes = array())
     {
-        $this->getInfo($this->_vars, $info);
+        $info = $this->getInfo($this->_vars, $info);
         if (isset($info['object'])) {
             $search_criteria = array();
             foreach ($info['object'] as $key => $value) {

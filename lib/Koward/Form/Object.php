@@ -222,7 +222,7 @@ class Koward_Form_Object extends Horde_Form {
 
     function &execute()
     {
-        $this->getInfo($this->_vars, $info);
+        $info = $this->getInfo($this->_vars, $info);
         if (isset($info['object'])) {
             if (empty($this->object)) {
                 if (isset($info['type'])) {

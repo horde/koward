@@ -15,11 +15,11 @@ class Koward_Form_Object extends Horde_Form {
      */
     protected $koward;
 
-    public function __construct($vars, $object, $params = array())
+    public function __construct($vars, $object, $params = [])
     {
-        $this->koward = &Koward::singleton();
+        $this->koward = Koward::singleton();
 
-        $this->object = &$object;
+        $this->object = $object;
 
         parent::__construct($vars);
 
@@ -220,9 +220,9 @@ class Koward_Form_Object extends Horde_Form {
         }
     }
 
-    function &execute()
+    function execute()
     {
-        $info = $this->getInfo($this->_vars, $info);
+        $info = $this->getInfo($this->_vars);
         if (isset($info['object'])) {
             if (empty($this->object)) {
                 if (isset($info['type'])) {

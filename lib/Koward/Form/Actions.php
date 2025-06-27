@@ -17,7 +17,7 @@ class Koward_Form_Actions extends Horde_Form {
 
     public function __construct($object, $buttons)
     {
-        $this->koward = &Koward::singleton();
+        $this->koward = Koward::singleton();
 
         parent::__construct(Horde_Variables::getDefaultVariables());
 
@@ -30,7 +30,7 @@ class Koward_Form_Actions extends Horde_Form {
         }
     }
 
-    function &execute()
+    function execute()
     {
         $submit = Horde_Util::getFormData('submitbutton');
         if (!empty($submit)) {

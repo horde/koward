@@ -314,7 +314,7 @@ class ObjectController extends Koward_Controller_Application
     {
         try {
             $this->vars = Horde_Variables::getDefaultVariables();
-            $this->form = new Koward_Form_Search($this->vars, $this->object);
+            $this->form = new Koward_Form_Search($this->vars);
 
             $this->allowEdit = $this->koward->hasAccess('object/edit',
                                                         Koward::PERM_EDIT);
@@ -334,7 +334,8 @@ class ObjectController extends Koward_Controller_Application
                     );
                 }
 
-                $this->objectlist = $this->form->execute(array_keys($this->attributes));
+                $this->form->setAttributes(array_keys($this->attributes));
+                $this->objectlist = $this->form->execute();
 
                 $uids = array_keys($this->objectlist);
 

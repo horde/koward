@@ -15,11 +15,15 @@ class Koward_Form_Search extends Horde_Form {
      */
     protected $koward;
 
-    public function __construct($vars, $object, $params = array())
-    {
-        $this->koward = &Koward::singleton();
+    private $attributes = [];
 
-        $this->object = &$object;
+    public function setAttributes($attributes) {
+        $this->attributes = $attributes;
+    }
+
+    public function __construct($vars, $params = [])
+    {
+        $this->koward = Koward::singleton();
 
         parent::__construct($vars);
 
@@ -76,9 +80,9 @@ class Koward_Form_Search extends Horde_Form {
         }
     }
 
-    function &execute($attributes = array())
+    function execute()
     {
-        $info = $this->getInfo($this->_vars, $info);
+        $info = $this->getInfo($this->_vars);
         if (isset($info['object'])) {
             $search_criteria = array();
             foreach ($info['object'] as $key => $value) {
@@ -95,7 +99,7 @@ class Koward_Form_Search extends Horde_Form {
             $criteria = array('AND' => array($search_criteria,
                                              $this->koward->search['criteria']));
             $params = array('scope' => 'sub',
-                            'attributes' => array_merge(array('dn'), $attributes));
+                            'attributes' => array_merge(array('dn'), $this->attributes));
             if (!empty($this->koward->conf['koward']['search']['sizelimit'])) {
                 $params['sizelimit'] = $this->koward->conf['koward']['search']['sizelimit'];
             }
